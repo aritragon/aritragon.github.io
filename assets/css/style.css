@@ -39,7 +39,13 @@ body, html {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
 }
-
+/* Email styling */
+.email {
+    font-size: 0.8em; /* Smaller font size */
+    color: #fff; /* White text color */
+    margin-top: -10px; /* Optional spacing adjustment */
+    text-align: center; /* Center-align if needed */
+}
 /* About Section */
 .about p {
     font-size: 1.2em;
@@ -57,13 +63,6 @@ body, html {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
-}
-/* Email styling */
-.email {
-    font-size: 0.8em; /* Smaller font size */
-    color: white; /* White text color */
-    margin-top: -10px; /* Optional spacing adjustment */
-    text-align: center; /* Center-align if needed */
 }
 /* Links Section */
 .links {
