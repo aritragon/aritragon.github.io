@@ -58,7 +58,11 @@ body, html {
     font-weight: bold;
     color: #fff;
 }
-
+.email {
+    font-size: 0.8em; /* Smaller font size */
+    color: #555; /* Subtle color */
+    margin-top: -10px; /* Optional spacing adjustment */
+}
 /* Links Section */
 .links {
     margin-top: 20px;
