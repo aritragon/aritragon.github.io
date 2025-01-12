@@ -43,7 +43,7 @@ body, html {
 .email {
     font-size: 0.8em; /* Smaller font size */
     color: #fff; /* White text color */
-    margin-top: -10px; /* Optional spacing adjustment */
+    margin-top: -20px; /* Optional spacing adjustment */
     text-align: center; /* Center-align if needed */
 }
 /* About Section */
