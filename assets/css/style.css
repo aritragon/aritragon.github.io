@@ -49,9 +49,10 @@ body, html {
 /* About Section */
 .about p {
     font-size: 1.2em;
-    max-width: 600px;
+    max-width: 1000px;
     margin: 0 auto 20px;
     line-height: 1.6;
+    text-align: justify;
 }
 
 /* Top Left Name */
