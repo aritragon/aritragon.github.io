@@ -47,10 +47,7 @@ body, html {
     text-align: center; /* Center-align if needed */
 }
 /* About Section */
-.about {
-    width: 100%; /* Let the section take full width */
-    text-align: justify; /* Justify the entire `.about` section if needed */
-}
+
 .about p {
     font-size: 1.2em;
     max-width: 800px;
