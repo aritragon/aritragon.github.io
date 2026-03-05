@@ -33,7 +33,7 @@ body {
             rgba(26,26,26,0.85) 60%, 
             #1a1a1a 65%            /* solid color below */
         ),
-        url("../images/background_3.jpg");
+        url("../images/background_3_new.jpg");
 
     background-size: cover;
     background-position: center;
