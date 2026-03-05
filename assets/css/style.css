@@ -66,6 +66,7 @@ body {
 
 .email {
     font-size: 15px;
+    color: black;
     opacity: 0.9;
     line-height: 1.6;
 }
