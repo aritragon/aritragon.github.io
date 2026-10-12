@@ -520,3 +520,23 @@ body.page {
 
     .talk-body h3 { font-size: 18px; }
 }
+/* Smaller video: sits beside the text on wider screens */
+
+.talk-card {
+    display: flex;
+    align-items: flex-start;
+}
+
+.talk-video {
+    flex: 0 0 340px;          /* video width – change this number to resize */
+    margin: 22px 0 22px 22px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.talk-body { flex: 1; min-width: 0; }
+
+@media (max-width: 760px) {
+    .talk-card { flex-direction: column; align-items: stretch; }
+    .talk-video { flex: none; margin: 0; border-radius: 0; }
+}
