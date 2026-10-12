@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
-<body class="page">
+<body class="page wide">
 
 <header class="page-hero">
   <div class="page-hero-inner">
@@ -20,10 +20,6 @@
       <a href="assets/files/CV.pdf" target="_blank">CV</a>
     </nav>
     <h1>Research</h1>
-    <!-- <p class="lede">
-      I work at the interface of the Cosmic Microwave Background and large-scale structure,
-      using the motions of galaxies and clusters to test dark energy and gravity.
-    </p> -->
   </div>
 </header>
 
@@ -35,7 +31,11 @@
      <section class="theme"> ... </section> block.
      =================================================================== -->
 
-<h2 class="section-title">Themes</h2>
+<div class="research-layout">
+
+<div class="research-main">
+
+<h2 class="section-title">Research themes</h2>
 
 <section class="theme">
   <h3>Environment-dependent pairwise velocities</h3>
@@ -53,7 +53,7 @@
     redshift-space distortion analyses.
   </p>
   <p class="related">
-    Related:
+    <span class="related-label">Papers</span>
     <a href="https://arxiv.org/pdf/2505.00608" target="_blank">Turning dispersion into signal</a>
   </p>
 </section>
@@ -77,7 +77,7 @@
     when cross-correlated with a galaxy survey of a few billion objects.
   </p>
   <p class="related">
-    Related:
+    <span class="related-label">Papers</span>
     <a href="https://arxiv.org/pdf/2407.19915" target="_blank">Estimators for the cross-pairwise kSZ effect</a>
     <!-- &middot; -->
     <!-- <a href="https://arxiv.org/pdf/2308.01730" target="_blank">Pairwise and cross-pairwise y-type polarised kSZ</a> -->
@@ -101,8 +101,8 @@ velocity of galaxy clusters. We find that cross-pairing clusters with galaxies f
 galaxies will enable us to detect the pairwise pkSZ effect with CMB-HD.
   </p>
   <p class="related">
-    Related:
-    <a href="https://arxiv.org/pdf/2208.02270" target="_blank">E and B modes of the CMB y-type distortions</a> &middot;
+    <span class="related-label">Papers</span>
+    <a href="https://arxiv.org/pdf/2208.02270" target="_blank">E and B modes of the CMB y-type distortions</a>
     <a href="https://arxiv.org/pdf/2308.01730" target="_blank">Pairwise and cross-pairwise y-type polarised kSZ</a>
   </p>
 </section>
@@ -116,11 +116,16 @@ galaxies will enable us to detect the pairwise pkSZ effect with CMB-HD.
     trapped cold atomic gases.
   </p>
   <p class="related">
-    Related:
+    <span class="related-label">Papers</span>
     <a href="https://arxiv.org/pdf/1904.06709" target="_blank">Duality in a hyperbolic interaction model</a>
   </p>
 </section>
 
+
+</div><!-- /research-main -->
+
+<aside class="research-side">
+<div class="pub-panel">
 
 <!-- ===================================================================
      PUBLICATIONS
@@ -197,9 +202,14 @@ galaxies will enable us to detect the pairwise pkSZ effect with CMB-HD.
 
 </ol>
 
-<footer class="site-footer">
-  Full citation record on <a href="https://inspirehep.net/authors/2708227?ui-citation-summary=true" target="_blank">INSPIRE-HEP</a>.
-</footer>
+<p class="pub-panel-foot">
+  Full citation record on <a href="https://inspirehep.net/authors/2708227?ui-citation-summary=true" target="_blank">INSPIRE-HEP</a>
+</p>
+
+</div><!-- /pub-panel -->
+</aside>
+
+</div><!-- /research-layout -->
 
 </main>
 
