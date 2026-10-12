@@ -1,65 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Talks</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Talks | Aritra Gon</title>
+<meta name="description" content="Recorded talks and slides by Aritra Gon.">
+<link rel="stylesheet" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="background talks-bg"></div>
 
-    <div class="content">
-        <h1>My Talks</h1>
-        <p>Below are links to my recorded talks, presentations, and slides.</p>
+<body class="page">
 
-        <div class="talks-list">
-            <!-- Talk 1: YouTube Video -->
-            <div class="talk">
-                <h2>Talk Title 1</h2>
-                <iframe 
-                    src="https://www.youtube.com/embed/HIkp-vXeijM?si=DkoeOjBra3896keP" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
-            </div>
+<header class="page-hero">
+  <div class="page-hero-inner">
+    <nav class="site-nav">
+      <a href="index.html" class="home">Aritra Gon</a>
+      <a href="research.html">Research</a>
+      <a href="talks.html" class="active">Talks</a>
+      <a href="assets/files/CV.pdf" target="_blank">CV</a>
+    </nav>
+    <h1>Talks</h1>
+    <p class="lede">Recorded seminars, presentations and slides.</p>
+  </div>
+</header>
 
-            <!-- Talk 2: External Website -->
-            <div class="talk">
-                <h2>Talk Title 2</h2>
-                <p>
-                    Learn more about this talk on 
-                    <a href="https://example.com" target="_blank">Example Website</a>.
-                </p>
-            </div>
+<main class="page-content">
 
-            <!-- Talk 3: Slides Only -->
-            <div class="talk">
-                <h2>Talk Title 3</h2>
-                <p>
-                    View the slides for this talk 
-                    <a href="assets/slides/talk3-slides.pdf" target="_blank">here</a>.
-                </p>
-            </div>
+<!-- ===================================================================
+     HOW TO ADD A TALK — copy one of the templates below to the top of
+     the list and fill it in. Delete any part you don't need.
 
-            <!-- Talk 4: Video and Slides -->
-            <div class="talk">
-                <h2>Talk Title 4</h2>
-                <iframe 
-                    src="https://www.youtube.com/embed/7GtbtVFuVP0?si=wApJRmSjDKEMaXgr" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
-                <p>
-                    View the slides for this talk 
-                    <a href="assets/slides/talk4-slides.pdf" target="_blank">here</a>.
-                </p>
-            </div>
-        </div>
+  ── Talk with a YouTube video (replace VIDEO_ID) ──────────────────────
+  <article class="talk-card">
+    <div class="talk-video">
+      <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="Talk title"
+        loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
     </div>
+    <div class="talk-body">
+      <div class="talk-meta">Venue &middot; Month Year</div>
+      <h3>Talk title</h3>
+      <p>One or two sentences about the talk.</p>
+      <div class="talk-actions">
+        <a class="btn solid" href="assets/slides/my-slides.pdf" target="_blank">Slides (PDF)</a>
+        <a class="btn" href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">Watch on YouTube</a>
+      </div>
+    </div>
+  </article>
+
+  ── Talk with slides / external link only (no video) ─────────────────
+  <article class="talk-card">
+    <div class="talk-body">
+      <div class="talk-meta">Venue &middot; Month Year</div>
+      <h3>Talk title</h3>
+      <p>One or two sentences about the talk.</p>
+      <div class="talk-actions">
+        <a class="btn solid" href="assets/slides/my-slides.pdf" target="_blank">Slides (PDF)</a>
+        <a class="btn" href="https://conference-website.org" target="_blank">Event page</a>
+      </div>
+    </div>
+  </article>
+     =================================================================== -->
+
+<h2 class="section-title">Recorded talks</h2>
+
+<article class="talk-card">
+  <div class="talk-video">
+    <iframe src="https://www.youtube-nocookie.com/embed/HIkp-vXeijM"
+      title="The y-type polarised kinetic SZ effect: pairwise and cross-pairwise estimator"
+      loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="talk-body">
+    <div class="talk-meta">Astronomy, University of Illinois</div>
+    <h3>The y-type polarised kinetic SZ effect: pairwise and cross-pairwise estimator</h3>
+    <p>
+      How the transverse motion of galaxy clusters leaves a polarised, y-type imprint on the CMB,
+      and why cross-correlating clusters with a large galaxy survey makes this signal detectable
+      with CMB-S4.
+    </p>
+    <div class="talk-actions">
+      <a class="btn solid" href="https://www.youtube.com/watch?v=HIkp-vXeijM" target="_blank">Watch on YouTube</a>
+      <a class="btn" href="https://arxiv.org/pdf/2308.01730" target="_blank">Related paper</a>
+    </div>
+  </div>
+</article>
+
+<article class="talk-card">
+  <div class="talk-video">
+    <iframe src="https://www.youtube-nocookie.com/embed/7GtbtVFuVP0"
+      title="E and B modes of the CMB y-type distortions"
+      loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="talk-body">
+    <div class="talk-meta">International Centre for Theoretical Sciences (ICTS)</div>
+    <h3>E and B modes of the CMB y-type distortions: polarised kinetic Sunyaev-Zeldovich effect</h3>
+    <p>
+      The polarisation generated by electron peculiar velocities during and after reionisation,
+      its split into blackbody and y-type parts, and what it can tell us about the reionisation history.
+    </p>
+    <div class="talk-actions">
+      <a class="btn solid" href="https://www.youtube.com/watch?v=7GtbtVFuVP0" target="_blank">Watch on YouTube</a>
+      <a class="btn" href="https://arxiv.org/pdf/2208.02270" target="_blank">Related paper</a>
+    </div>
+  </div>
+</article>
+
+<footer class="site-footer">
+  <a href="index.html">&larr; Back to home</a>
+</footer>
+
+</main>
+
 </body>
 </html>
