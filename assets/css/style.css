@@ -12,7 +12,8 @@
 body {
     font-family: 'Inter', sans-serif;
     color: white;
-    height: 100vh;
+    background: #1a1a1a;
+    min-height: 100vh;
     overflow-x: hidden;
 }
 
@@ -20,11 +21,11 @@ body {
 /* Background Image with fade to solid color */
 
 .background {
-    position: fixed;
+    position: absolute;   /* scrolls away with the page so long text stays readable */
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 
     background:
         linear-gradient(
@@ -125,6 +126,13 @@ body {
     line-height: 1.7;
     margin-bottom: 12px;
     max-width: 700px;
+}
+
+
+.about a {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 
@@ -381,7 +389,7 @@ body.page {
 }
 
 .pub-title::after {
-    content: " PDF";
+    content: "PDF";
     font-size: 10px;
     font-weight: 600;
     letter-spacing: 0.06em;
@@ -520,6 +528,8 @@ body.page {
 
     .talk-body h3 { font-size: 18px; }
 }
+
+
 /* Smaller video: sits beside the text on wider screens */
 
 .talk-card {
@@ -539,4 +549,119 @@ body.page {
 @media (max-width: 760px) {
     .talk-card { flex-direction: column; align-items: stretch; }
     .talk-video { flex: none; margin: 0; border-radius: 0; }
+}
+
+
+/* =========================================================
+   Research page: two-column layout
+   (themes on the left, publications on the right)
+   ========================================================= */
+
+.wide .page-hero-inner,
+.wide .page-content { max-width: 1240px; }
+
+.wide .page-hero { padding-bottom: 40px; }
+
+.wide .site-nav { margin-bottom: 56px; }
+
+.research-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 56px;
+    align-items: start;
+}
+
+/* Numbered theme headings */
+
+.research-main { counter-reset: theme; }
+
+.research-main .theme { counter-increment: theme; padding-top: 22px; }
+
+.research-main .theme h3::before {
+    content: counter(theme, decimal-leading-zero);
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin-bottom: 6px;
+}
+
+.research-main .theme p { max-width: none; }
+
+/* "Papers" links shown as small chips */
+
+.theme .related {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.related-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-right: 2px;
+}
+
+.theme .related a {
+    font-size: 13px;
+    padding: 4px 11px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+}
+
+.theme .related a:hover { text-decoration: none; background: rgba(242,163,94,0.24); }
+
+/* Publications panel: stays in view while you scroll the themes */
+
+.pub-panel {
+    position: sticky;
+    top: 24px;
+    max-height: calc(100vh - 48px);
+    overflow-y: auto;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    padding: 0 26px 18px;
+    margin-top: 44px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.18) transparent;
+}
+
+.research-side { align-self: stretch; }   /* lets the panel stick while scrolling */
+
+.page-content .pub-panel h2.section-title { margin-top: 22px; margin-bottom: 4px; }
+
+.pub-panel .pub { padding: 12px 0 12px 34px; }
+
+.pub-panel .pub::before { top: 15px; }
+
+.pub-panel .pub:last-child { border-bottom: none; }
+
+.pub-panel .pub-title { font-size: 15.5px; }
+
+.pub-panel .pub-authors,
+.pub-panel .pub-venue { font-size: 13.5px; }
+
+.pub-panel-foot {
+    margin-top: 10px;
+    padding-top: 16px;
+    border-top: 1px solid var(--card-border);
+    font-size: 13.5px;
+    color: var(--muted);
+}
+
+@media (max-width: 900px) {
+    .research-layout { grid-template-columns: 1fr; gap: 10px; }
+    .pub-panel { position: static; max-height: none; margin-top: 30px; }
+}
+
+@media (max-width: 700px) {
+    .pub-panel { padding: 2px 18px 18px; }
 }
