@@ -665,3 +665,26 @@ body.page {
 @media (max-width: 700px) {
     .pub-panel { padding: 2px 18px 18px; }
 }
+/* Figures inside research themes */
+
+.research-fig {
+    margin: 22px 0 18px;
+}
+
+.research-fig img {
+    display: block;
+    width: 100%;
+    max-width: 500px;          /* change to make figures bigger/smaller */
+    height: auto;
+    background: #fff;          /* keeps black axes visible on transparent plots */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.research-fig figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--muted);
+    max-width: 560px;
+}
